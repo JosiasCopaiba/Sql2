@@ -105,3 +105,26 @@ INSERT INTO envios VALUES
 (12, 4, 4, 2, '2023-05-15', 600.00), 
 (13, 5, 5, 5, '2032-01-01', 1300.00),
 (14, 2, 4, 1, '2023-08-10', -900.00);
+
+
+3. Deteccion de incosistencias lógicas o Valores Invalidos: Identificar envios 
+con información valores indebidos,o valores erróneos. Con que consulta SQL 
+los identifico? 
+4. Analizar la información para obtener:
+a) Total de envíos por mes 
+b) Costo total de envíos por mes
+c) Costo promedio por vehículo
+d) Total clientes con envíos
+e) Cantidad de envíos por producto (visualizar el nombre del producto)
+f) Clientes con más de un envío (mostrar el nombre del cliente)
+PARTE 3 – Controles de Auditoría 
+1. Utilizando un LEFT JOIN,o RIGHT JOIN obtener el listado de clientes que no 
+tienen envíos asociados.
+ id_cliente
+ nombre
+ dirección
+2. Mostrar todos los productos, incluyendo aquellos que no aparecen en ningún 
+envío.
+ id_producto
+ descripción
+ id_envio (si existe)
